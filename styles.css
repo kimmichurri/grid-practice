@@ -6,7 +6,7 @@ body {
   font-family: 'Slabo 27px', serif;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: .5fr 2fr 2fr .5fr;
+  grid-template-rows: .5fr 2fr 2fr .25fr;
   grid-template-areas:
     "hd hd hd hd hd hd hd"
     "as as as prim prim prim prim"
@@ -21,6 +21,11 @@ header {
   grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 2;
+  text-align: center;
+}
+
+.header-details li {
+  margin: 0px 40px;
 }
 
 li {
@@ -44,6 +49,7 @@ h1 {
 .primary-content,
 .secondary-content {
   margin: 10px;
+  padding: 10px;
 }
 
 .primary-content {
@@ -54,10 +60,6 @@ h1 {
   grid-row-end: 3;
 }
 
-h2 {
-
-}
-
 .secondary-content {
   grid-area: sec;
   grid-column-start: 3;
@@ -66,9 +68,6 @@ h2 {
   grid-row-end: 4;
 }
 
-h3 {
-
-}
 
 footer {
   font-family: 'Libre Barcode 128 Text', cursive;
@@ -77,4 +76,8 @@ footer {
   grid-column-end: 7;
   grid-row-start: 4;
   grid-row-end: 5;
+}
+
+footer p {
+  float: right;
 }
